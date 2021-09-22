@@ -6,14 +6,15 @@ import {
   MetaReducer
 } from '@ngrx/store';
 import { environment } from '../../environments/environment';
+import {AuthModule} from '../auth/auth.module';
 
-export interface State {
+export interface AppState {
 
 }
 
-export const reducers: ActionReducerMap<State> = {
+export const reducers: ActionReducerMap<AuthModule> = {
 
 };
 
 
-export const metaReducers: MetaReducer<State>[] = !environment.production ? [] : [];
+export const metaReducers: MetaReducer<AuthModule>[] = !environment.production ? [] : [];

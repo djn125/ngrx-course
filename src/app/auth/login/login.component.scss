@@ -9,3 +9,13 @@
   display: flex;
   flex-direction: column;
 }
+
+quill-editor {
+  &.read-only {
+    ::ng-deep {
+      .ql-toolbar {
+        visibility: hidden;
+      }
+    }
+  }
+}
